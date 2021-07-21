@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    top: 25px;
+    left: 56px;
+
+}
+
+.header a{
+    display: inline-block;
+    background: #e50914;
+    color: white;
+    align-self: flex-start;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+
+
+.main {
+    height: 727px;
+    background: url("../img/bg.jpg") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-child {
+    z-index: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.main h1{
+    font-size: 54px;
+    max-width: 700px;
+    text-align: center;
+    
+}
+
+.main span {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.form-cta{
+    display: grid;
+    grid-template-columns: 450px 160px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-cta input {
+    padding: 18px 5px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.form-cta button{
+    background: #e50914;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.form-cta button::after{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    background: url("../img/seta.png");
+
+}
+
+.main p{
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.gradient {
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(top top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
